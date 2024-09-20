@@ -8,7 +8,7 @@ import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 import { BrowserModule } from '@angular/platform-browser';
 @Component({
   standalone: true,
-  imports: [HeroDetailComponent, CommonModule, FormsModule, BrowserModule],
+  imports: [HeroDetailComponent, CommonModule, FormsModule],
     selector: 'app-heroes',
     templateUrl: './heroes.component.html',
     styleUrls:['./heroes.component.scss'],
@@ -34,7 +34,6 @@ export class HeroesComponent implements OnInit {
             `HeroesComponent: Selected hero id=${hero.id}`
         );
     }
-
     getHeroes(): void {
         this.heroService
             .getHeroes()
