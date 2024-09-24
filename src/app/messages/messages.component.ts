@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { MessageService } from '../message.service';
 import { CommonModule} from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
+
 @Component({
   imports:[CommonModule, FormsModule],
   standalone : true,
